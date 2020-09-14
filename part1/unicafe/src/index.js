@@ -47,21 +47,21 @@ const Statistic = ({obj}) => {
   let ShowAll = All()
   
 
-  if(ShowAll == 0){
+  if(ShowAll === 0){
     return(
       <div>No feedback to give</div>
     )
   }else{
 
     return(
-      <div>
+        <div>
+          
       <p> good {obj.good}</p>
       <p>neutral {obj.neutral}</p>
       <p>bad {obj.neutral}</p>
       <p> All {ShowAll}</p>
       <p> pourcent {showPourcent}</p>
-
-    </div>
+        </div>
   )
   }
 }
